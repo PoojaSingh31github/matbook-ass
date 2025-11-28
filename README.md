@@ -175,7 +175,7 @@ npm run dev
 
 ## Development Notes
 
-- Frontend uses absolute URLs to backend (http://localhost:5000)
+- Frontend uses absolute URLs to backend (https://matbook-ass-1.onrender.com)
 - All API calls include proper error handling
 - Form validation matches backend validation rules
 - Table supports server-side operations

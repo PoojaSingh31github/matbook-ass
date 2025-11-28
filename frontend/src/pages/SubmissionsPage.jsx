@@ -61,7 +61,7 @@ const SubmissionsPage = () => {
 
   const handleDelete = async (id) => {
     if (confirm('Are you sure you want to delete this submission?')) {
-      await fetch(`http://localhost:5000/api/submissions/${id}`, {
+      await fetch(`https://matbook-ass-1.onrender.com/api/submissions/${id}`, {
         method: 'DELETE',
       })
       // Invalidate query

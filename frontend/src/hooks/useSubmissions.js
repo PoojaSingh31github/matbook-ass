@@ -41,7 +41,7 @@ export const useSubmissions = (page = 1, limit = 10, sortBy = 'createdAt', searc
         sortBy,
         sortOrder: sortBy.startsWith('-') ? 'asc' : 'desc'
       })
-      const res = await fetch(`http://localhost:5000/api/submissions?${params}`)
+      const res = await fetch(`https://matbook-ass-1.onrender.com/api/submissions?${params}`)
       if (!res.ok) {
         throw new Error('Failed to fetch submissions')
       }

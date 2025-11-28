@@ -78,7 +78,7 @@ export const useFormSchema = () => {
   return useQuery({
     queryKey: ['form-schema'],
     queryFn: async () => {
-      const res = await fetch('http://localhost:5000/api/form-schema')
+      const res = await fetch('https://matbook-ass-1.onrender.com/api/form-schema')
       if (!res.ok) {
         throw new Error('Failed to fetch form schema')
       }

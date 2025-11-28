@@ -4,7 +4,7 @@ export const useSubmitForm = () => {
   const queryClient = useQueryClient()
   return useMutation({
     mutationFn: async (data) => {
-      const res = await fetch('http://localhost:5000/api/submissions', {
+      const res = await fetch('https://matbook-ass-1.onrender.com/api/submissions', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data),
